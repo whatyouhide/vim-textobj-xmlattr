@@ -5,7 +5,7 @@ They represent XML/HTML attributes.
 
 These attributes will work:
 
-```
+```html
 <div class="box" id=footer data-updatable data-content="escaped \"string\"!">
 ```
 
@@ -15,7 +15,7 @@ I know that `aw` includes the whitespace *after*, but XML/HTML attributes always
 include whitespace before them, while they do not always include whitespace
 after:
 
-```
+```xml
 <some-tag with-only="one attribute"/>
 ```
 
