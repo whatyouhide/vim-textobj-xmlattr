@@ -6,7 +6,7 @@ They represent XML/HTML attributes.
 These attributes will work:
 
 ```html
-<div class="box" id=footer data-updatable data-content="escaped \"string\"!">
+<div class="box" id=footer data-updatable data-content="everything"></div>
 ```
 
 `ix` works with the inner attribute, with no surrounding whitespace.  

@@ -9,13 +9,12 @@ endif
 let s:RE_WORD = '\(\w\+\)'
 " An attribute name: `src`, `data-attr`, `strange_attr`.
 let s:RE_ATTR_NAME = '\([a-zA-Z0-9\-_]\+\)'
-" A quoted string (allows \").
-let s:RE_QUOTED_STR = '\(".\{-}\(\\\)\@<!"\)'
+" A quoted string.
+let s:RE_QUOTED_STR = '\(".\{-}"\)'
 " The value of an attribute: a word with no quotes or a quoted string.
 let s:RE_ATTR_VALUE = '\(' . s:RE_QUOTED_STR . '\|' . s:RE_WORD . '\)'
 " The right-hand side of an XML attr: an optional `=something` or `="str"`.
 let s:RE_ATTR_RHS = '\(=' . s:RE_ATTR_VALUE . '\)\='
-
 
 " The final regex.
 let s:RE_ATTR_I = '\(' . s:RE_ATTR_NAME . s:RE_ATTR_RHS . '\)'
