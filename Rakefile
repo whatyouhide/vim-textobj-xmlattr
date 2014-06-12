@@ -1,3 +1,5 @@
+#!/usr/bin/env rake
+
 task ci: %i(dump test)
 
 task :dump do
