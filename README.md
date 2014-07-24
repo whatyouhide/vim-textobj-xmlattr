@@ -5,7 +5,7 @@
 This vim plugin provides two text objects: `ax` and `ix`.  
 They represent XML/HTML attributes.
 
-It's based (and requires) on
+It's based on (and requires)
 [vim-textobj-user](http://github.com/kana/vim-textobj-user).
 
 These attributes will work:
@@ -44,5 +44,4 @@ Plugin 'whatyouhide/vim-textobj-xmlattr'
 
 ## Contributing
 
-You know how: branch, work, commit, pull request. No need to fork such a small
-project.
+You know how: fork, commit, pull request.
