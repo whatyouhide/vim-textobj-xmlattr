@@ -35,7 +35,7 @@ The preferred installation method is through
 
 Just add this to your plugin list:
 
-```vimscript
+``` vim
 " kana/vim-textobj-user is required by this plugin.
 Plugin 'kana/vim-textobj-user'
 Plugin 'whatyouhide/vim-textobj-xmlattr'
