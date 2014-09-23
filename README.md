@@ -1,4 +1,4 @@
-# XML/HTML attributes
+# vim-textobj-xmlattr
 
 [![Build Status](https://travis-ci.org/whatyouhide/vim-textobj-xmlattr.svg?branch=master)](https://travis-ci.org/whatyouhide/vim-textobj-xmlattr)
 
