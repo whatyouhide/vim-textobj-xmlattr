@@ -62,4 +62,10 @@ describe 'xmlattr'
     Expect YankInside('fw') == 'with_strange_AttRIbu-TES="hello"'
     Expect YankAround('fw') == ' with_strange_AttRIbu-TES="hello"'
   end
+
+  it 'works with colons in the attribute name'
+    put = '<uses-permission android:name=\"android.INTERNET\" />'
+    Expect YankInside('fa') == 'android:name="android.INTERNET"'
+    Expect YankAround('fa') == ' android:name="android.INTERNET"'
+  end
 end
