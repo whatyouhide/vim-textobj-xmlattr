@@ -72,4 +72,4 @@ happy to get help!
 [wtfpl]: http://www.wtfpl.net/
 [wtfpl-logo]: http://www.wtfpl.net/wp-content/uploads/2012/12/logo-220x1601.png
 
-[gif]: http://i.imgur.com/x8SLaEd.gif "vim-textobj-xmlattr in action"
+[gif]: http://i.imgur.com/Bj1mGR0.gif "vim-textobj-xmlattr in action"
