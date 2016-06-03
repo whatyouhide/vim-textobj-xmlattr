@@ -38,8 +38,7 @@ appealing!).
 
 ``` viml
 " vim-plug
-Plug 'kana/vim-textobj-user'
-Plug 'whatyouhide/vim-textobj-xmlattr'
+Plug 'kana/vim-textobj-user' | Plug 'whatyouhide/vim-textobj-xmlattr'
 " NeoBundle
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'whatyouhide/vim-textobj-xmlattr'
