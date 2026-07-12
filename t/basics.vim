@@ -57,6 +57,18 @@ describe 'xmlattr'
     Expect YankAround('fv') == ' val="attr"'
   end
 
+  it 'works with unquoted attributes with spaces around equals'
+    put = '<tag val = attr>'
+    Expect YankInside('fv') == 'val = attr'
+    Expect YankAround('fv') == ' val = attr'
+  end
+
+  it 'works with quoted attributes with spaces around equals'
+    put = '<tag rel = \"stylesheet\">'
+    Expect YankInside('fr') == 'rel = "stylesheet"'
+    Expect YankAround('fr') == ' rel = "stylesheet"'
+  end
+
   it 'works with strange attributes'
     put = '<tag with_strange_AttRIbu-TES=\"hello\">'
     Expect YankInside('fw') == 'with_strange_AttRIbu-TES="hello"'
