@@ -13,8 +13,9 @@ let s:RE_ATTR_NAME = '\([a-zA-Z0-9\-_:@.]\+\)'
 let s:RE_QUOTED_STR = '\(".\{-}"\)'
 " The value of an attribute: a word with no quotes or a quoted string.
 let s:RE_ATTR_VALUE = '\(' . s:RE_QUOTED_STR . '\|' . s:RE_WORD . '\)'
-" The right-hand side of an XML attr: an optional `=something` or `="str"`.
-let s:RE_ATTR_RHS = '\(=' . s:RE_ATTR_VALUE . '\)\='
+" The right-hand side of an XML attr: an optional `=something` or `="str"`,
+" with optional whitespace around `=`.
+let s:RE_ATTR_RHS = '\(\s*=\s*' . s:RE_ATTR_VALUE . '\)\='
 
 " The final regex.
 let s:RE_ATTR_I = '\(' . s:RE_ATTR_NAME . s:RE_ATTR_RHS . '\)'
